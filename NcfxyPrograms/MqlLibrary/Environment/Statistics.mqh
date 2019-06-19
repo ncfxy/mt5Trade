@@ -1,5 +1,7 @@
 #include "../RootInclude.mqh"
 
+// https://www.mql5.com/zh/docs/constants/environment_state/statistics
+
 enum ENUM_STATISTICS{
     STAT_INITIAL_DEPOSIT,    //初始存款的值	double
     STAT_WITHDRAWAL,    //从账户取款	double

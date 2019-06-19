@@ -76,10 +76,12 @@ enum ENUM_TERMINAL_INFO_STRING
     TERMINAL_COMMONDATA_PATH, //电脑中所有程序端的普通路径    string
 };
 
+//在MQL5程序环境中该函数返回一定值。
 int TerminalInfoInteger(
-    int property_id // 属性标识符
+    ENUM_TERMINAL_INFO_INTEGER property_id // 属性标识符
 );
 
+//在MQL5程序环境中该函数返回一定值，该属性一定是字符串型。
 string TerminalInfoString(
-    int property_id // 属性标识符
+    ENUM_TERMINAL_INFO_STRING property_id // 属性标识符
 );

@@ -1,8 +1,6 @@
 #include "../RootInclude.mqh"
 
-//+------------------------------------------------------------------+
-//| Account Constant
-//+------------------------------------------------------------------+
+// https://www.mql5.com/zh/docs/constants/environment_state/accountinformation
 
 enum ENUM_ACCOUNT_INFO_INTEGER
 {
