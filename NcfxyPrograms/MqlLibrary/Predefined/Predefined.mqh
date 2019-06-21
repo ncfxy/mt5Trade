@@ -30,6 +30,4 @@ struct any_class
 {
 };
 
-struct datetime
-{
-};
+typedef long datetime;
