@@ -15,10 +15,6 @@ enum ENUM_ACCOUNT_INFO_INTEGER
     ACCOUNT_CURRENCY_DIGITS //账户货币的小数位数，这是正确展示交易结果所必需的	int
 };
 
-long AccountInfoInteger(
-    ENUM_ACCOUNT_INFO_INTEGER property_id // 属性标识符
-);
-
 enum ENUM_ACCOUNT_INFO_DOUBLE
 {
     ACCOUNT_BALANCE,            //存入货币时账户结余	double
@@ -37,20 +33,12 @@ enum ENUM_ACCOUNT_INFO_DOUBLE
     ACCOUNT_COMMISSION_BLOCKED  //账户的当前锁定手续费金额	double
 };
 
-double AccountInfoDouble(
-    ENUM_ACCOUNT_INFO_DOUBLE property_id // 属性标识符
-);
-
 enum ENUM_ACCOUNT_INFO_STRING {
     ACCOUNT_NAME,    //用户名	string
     ACCOUNT_SERVER,    //交易服务器名称	string
     ACCOUNT_CURRENCY,    //账户货币	string
     ACCOUNT_COMPANY,    //提供账户的公司名称	string
 };
-
-string AccountInfoString(
-    ENUM_ACCOUNT_INFO_STRING property_id // 属性标识符
-);
 
 enum ENUM_ACCOUNT_TRADE_MODE{
     ACCOUNT_TRADE_MODE_DEMO,    //样本账户
