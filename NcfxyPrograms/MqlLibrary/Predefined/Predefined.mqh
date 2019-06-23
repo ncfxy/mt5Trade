@@ -11,6 +11,10 @@
 #define _UninitReason
 #define _IsX64
 
+#define CHAR_VALUE 1
+#define SHORT_VALUE 2
+#define INT_VALUE 4
+
 typedef int uint;
 typedef long ulong;
 typedef char uchar;
