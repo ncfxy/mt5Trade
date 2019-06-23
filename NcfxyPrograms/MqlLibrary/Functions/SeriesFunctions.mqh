@@ -1,4 +1,5 @@
 #include "../AllConstants.mqh"
+#include "CommonFunctions.mqh"
 
 // https://www.mql5.com/zh/docs/series
 

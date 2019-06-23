@@ -2,19 +2,19 @@
 
 // https://www.mql5.com/zh/docs/constants/namedconstants
 
-#define __DATE__      // 文件编译日期，无时间（小时，分钟，秒等于0）
+#define __DATE__ 0      // 文件编译日期，无时间（小时，分钟，秒等于0）
 
-#define __DATETIME__    // 文件编译日期和时间
+#define __DATETIME__ 0   // 文件编译日期和时间
 
-#define __LINE__    // 源代码中的字符串数量，宏放置的位置
+#define __LINE__ 0    // 源代码中的字符串数量，宏放置的位置
 
-#define __FILE__    // 当前编辑文件的名称
+#define __FILE__ 0    // 当前编辑文件的名称
 
-#define __PATH__    // 当前正在编译的文件的绝对路径
+#define __PATH__ 0   // 当前正在编译的文件的绝对路径
 
-#define __FUNCTION__    // 函数名称，宏主体位置
+#define __FUNCTION__ 0    // 函数名称，宏主体位置
 
-#define __FUNCSIG__ // 宏所在的函数的签名。函数的完整描述记录可用于识别重载函数很
+#define __FUNCSIG__ 0 // 宏所在的函数的签名。函数的完整描述记录可用于识别重载函数很
 
 #define __MQLBUILD__  
 #define __MQL5BUILD__ // 编译器构造数量

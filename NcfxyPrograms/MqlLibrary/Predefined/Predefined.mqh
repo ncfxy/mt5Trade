@@ -15,6 +15,8 @@
 #define SHORT_VALUE 2
 #define INT_VALUE 4
 
+#define OBJ_ALL_PERIODS 0
+
 typedef int uint;
 typedef long ulong;
 typedef char uchar;
