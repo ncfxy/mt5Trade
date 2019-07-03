@@ -9,6 +9,7 @@ import { createConnection,
     CompletionItem,
     CompletionItemKind,
     DiagnosticSeverity } from "vscode-languageserver";
+import { Mql5Validate } from "./Mql5Validate";
 
 
 
@@ -23,6 +24,7 @@ let documents: TextDocuments = new TextDocuments();
 let hasConfigurationCapability: boolean = false;
 let hasWorkspaceFolderCapability: boolean = false;
 let hasDiagnosticRelatedInformationCapability: boolean = false;
+let mql5Validate: Mql5Validate = new Mql5Validate(connection);
 
 connection.onInitialize((params: InitializeParams) => {
     let capabilities = params.capabilities;
@@ -88,7 +90,7 @@ connection.onDidChangeConfiguration(change => {
     }
 
     // Revalidate all open text documents
-    documents.all().forEach(validateTextDocument);
+    documents.all().forEach(mql5Validate.validateMql5Document);
 });
 
 function getDocumentSettings(resource: string): Thenable<ExampleSettings> {
@@ -114,7 +116,7 @@ documents.onDidClose(e => {
 // The content of a text document has changed. This event is emitted
 // when the text document first opened or when its content has changed.
 documents.onDidChangeContent(change => {
-    validateTextDocument(change.document);
+    mql5Validate.validateMql5Document(change.document);
 });
 
 async function validateTextDocument(textDocument: TextDocument): Promise<void> {

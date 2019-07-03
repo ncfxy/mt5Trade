@@ -30,7 +30,8 @@ export function activate(context: ExtensionContext) {
     // Options to control the language client
     let clientOptions: LanguageClientOptions = {
         // Register the server for plain text document
-        documentSelector: [{ scheme: 'file', language: 'plaintext'}],
+        documentSelector: [ // {language: 'mql5'},
+                            {pattern: '**/*.{mq5, mqh}'}],
         synchronize: {
             // Notify the server about file changes to '.clientrc file contained in the workspace
             fileEvents: workspace.createFileSystemWatcher('**/.clientrc')

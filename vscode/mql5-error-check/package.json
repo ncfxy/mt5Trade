@@ -46,9 +46,17 @@
                     "mql5"
                 ],
                 "extensions": [
-                    ".mq5"
+                    ".mq5",
+                    ".mqh"
                 ],
                 "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "mql5",
+                "scopeName": "source.mq5",
+                "path": "./syntaxes/mql5.tmLanguage."
             }
         ]
     },
