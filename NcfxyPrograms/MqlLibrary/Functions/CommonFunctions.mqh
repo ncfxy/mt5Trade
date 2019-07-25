@@ -72,7 +72,7 @@ bool PlaySound(
 
 // 在EA交易日志中输入消息。参量可以是各种类型。
 void Print(
-    string argument, // 第一值
+    void* argument, // 第一值
     ...              // 下一值
 );
 
